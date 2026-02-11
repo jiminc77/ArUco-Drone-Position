@@ -2,7 +2,11 @@
 # ArUco Marker Detection
 
 ## 1. Environment Setup
+Generation scripts require Python libraries. It's recommended to use a virtual environment:
 ```bash
+python3 -m venv venv
+source venv/bin/activate
+
 pip install opencv-contrib-python numpy Pillow
 ```
 
