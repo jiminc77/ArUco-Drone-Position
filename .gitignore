@@ -1,0 +1,4 @@
+etc/
+venv/
+__pycache__/
+*.pyc
