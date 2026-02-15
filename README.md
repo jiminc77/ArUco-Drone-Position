@@ -19,7 +19,7 @@ pip install opencv-contrib-python numpy Pillow
 
    [Official Docs](https://wiki.ros.org/camera_calibration)
    ```bash
-   rosrun camera_calibration cameracalibrator.py --size 5x7 --square 0.035 image:=/camera/image_raw camera:=/camera
+   rosrun camera_calibration cameracalibrator.py --size 4x6 --square 0.035 image:=/camera/image_raw camera:=/camera
    ```
 3. **Save**:
    Commit calibration. It saves to `~/.ros/camera_info/head_camera.yaml`.
