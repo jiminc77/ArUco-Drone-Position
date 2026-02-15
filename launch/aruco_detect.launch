@@ -11,12 +11,13 @@
     <node pkg="aruco_ros" type="single" name="aruco_single">
         <remap from="/camera_info" to="$(arg camera_info)" />
         <remap from="/image" to="$(arg camera_topic)" />
-        <param name="image_is_rectified" value="True"/>
+        <param name="image_is_rectified" value="False"/>
         <param name="marker_size"        value="$(arg markerSize)"/>
         <param name="marker_id"          value="$(arg markerId)"/>
         <param name="reference_frame"    value="$(arg ref_frame)"/>
         <param name="camera_frame"       value="$(arg camera_frame)"/>
         <param name="marker_frame"       value="aruco_marker_frame" />
+        <param name="dictionary" value="9" />
     </node>
     
     <node pkg="image_view" type="image_view" name="image_view">
